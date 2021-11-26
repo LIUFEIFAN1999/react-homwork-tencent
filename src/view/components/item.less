@@ -1,0 +1,36 @@
+input[type='checkbox'].checkbox{
+    cursor: pointer;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+}
+
+input[type='checkbox'].checkbox::after{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    visibility: visible;
+    padding-left: 0px;
+    text-align: center;
+    content: ' ';
+    border-radius: 1px
+}
+       
+input[type='checkbox'].checkbox:checked::after{
+    background-color: rgb(0, 110, 255);
+    position: absolute;
+    top: 0;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    visibility: visible;
+    padding-left: 0px;
+    text-align: center;
+    content: "✓";
+    border-radius: 1px
+}
